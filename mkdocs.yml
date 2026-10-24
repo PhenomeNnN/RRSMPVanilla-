@@ -1,0 +1,66 @@
+site_name: RUST & RADISH · SMP Vanilla+
+site_description: Вики сервера RUST & RADISH — команды, развитие персонажа, города и пивоварение.
+site_url: https://PhenomeNnN.github.io/RRSMPVanilla-/
+repo_url: https://github.com/PhenomeNnN/RRSMPVanilla-
+repo_name: RRSMPVanilla-
+edit_uri: edit/main/docs/
+copyright: RUST & RADISH · Играй, строй, развивайся.
+theme:
+  name: material
+  language: ru
+  font: false
+  logo: assets/radish.svg
+  favicon: assets/radish.svg
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+    - scheme: default
+      primary: custom
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Начало: index.md
+  - Команды: commands.md
+  - Гайды:
+      - ValhallaMMO Classic: guides/valhalla.md
+      - Towny — города и нации: guides/towny.md
+      - BreweryX — пивоварение: guides/breweryx.md
+  - Правила: rules.md
+  - Ссылки: links.md
+validation:
+  nav:
+    omitted_files: warn
+  links:
+    not_found: warn
+    anchors: warn
